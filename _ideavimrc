@@ -1,0 +1,47 @@
+" 1. boring 
+" Display 5 lines above/below the cursor when scrolling with a mouse.
+set scrolloff=5
+" Speed up scrolling in Vim
+set ttyfast
+
+" 2. jump around
+nnoremap K 5k
+nnoremap J 5j
+imap jk <Esc>
+vmap e <Esc>
+
+" keep in the middle when move
+" nnoremap j jzz
+" nnoremap k kzz
+
+" 3. special
+" space + u means merge next line to the end of current line
+nnoremap <leader>u J
+
+" last. intellij alone
+nnoremap m :action KJumpAction<cr>
+:set rnu
+:set nu
+
+" 4. copy paste
+nnoremap $ g_
+set clipboard+=unnamed
+
+nmap <S-Left> <Action>(EditorLeftWithSelection)
+nmap <S-Right> <Action>(EditorRightWithSelection)
+nmap <S-Up> <Action>(EditorUpWithSelection)
+nmap <S-Down> <Action>(EditorDownWithSelection)
+imap <S-Left> <Action>(EditorLeftWithSelection)
+imap <S-Right> <Action>(EditorRightWithSelection)
+imap <S-Up> <Action>(EditorUpWithSelection)
+imap <S-Down> <Action>(EditorDownWithSelection)
+vmap <S-Left> <Action>(EditorLeftWithSelection)
+vmap <S-Right> <Action>(EditorRightWithSelection)
+vmap <S-Up> <Action>(EditorUpWithSelection)
+vmap <S-Down> <Action>(EditorDownWithSelection)
+nmap <S-Home> <Action>(EditorLineStartWithSelection)
+nmap <S-End> <Action>(EditorLineEndWithSelection)
+imap <S-Home> <Action>(EditorLineStartWithSelection)
+imap <S-End> <Action>(EditorLineEndWithSelection)
+vmap <S-Home> <Action>(EditorLineStartWithSelection)
+vmap <S-End> <Action>(EditorLineEndWithSelection)
