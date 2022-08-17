@@ -1,7 +1,10 @@
 set scrolloff=5
 set ttyfast
+
 inoremap jk <ESC>
+
 nnoremap K 5k
+
 nnoremap J 5j
 syntax on
 
@@ -28,3 +31,12 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
+
+call plug#begin()
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+call plug#end()
+
+set t_Co=256
+
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
