@@ -91,3 +91,8 @@ alias eudic='/home/jiyu/Applications/eudic_3607f62f9b8228131f9f4b0f97be4cbf.AppI
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias mgit='cd /hut/gitjiyu'
+alias up='upgrade'
+alias rb='sudo reboot now'
+alias sd='sudo shutdown now'
